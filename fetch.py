@@ -3,7 +3,7 @@ import os
 
 
 headers = {"Accept":"application/json", "Content-Type":"application/json", "Authorization":"Bearer token"}
-r = requests.get("https://api.spotify.com/v1/playlists/playlist)id", headers=headers)
+r = requests.get("https://api.spotify.com/v1/playlists/playlist_id", headers=headers)
 
 no_of_tracks = len(r.json()['tracks']['items'])
 for i in range(0, no_of_tracks):
